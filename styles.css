@@ -309,7 +309,7 @@ body {
   background-image: url(skills-background.avif);
   padding: 80px 50px;
 }
-.tech-skill-container .tech-header {
+ .tech-header {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -317,7 +317,8 @@ body {
   /* text-align: center; */
   margin: 50px 0;
 }
-.tech-skill-container h3 {
+/* .tech-skill-container */
+ h3 {
   font-family: 'Ubuntu', sans-serif;
   font-size: 62px;
   font-weight: 400;
@@ -420,8 +421,8 @@ body {
     height: 130px;
     /* background-color: #12f7d6; */
     border-radius: 50%;
-    font-size: 42px;
-    padding: 45px;
+    font-size: 50px;
+    padding: 40px 45px;
     /* text-align: center; */
 }
 .language-container div p{
@@ -451,4 +452,135 @@ body {
 }
 .react-icon p{
     color: #28A9E0;
+}
+/***************************** Work section **************************/
+.work-container{
+  background-image: url(work-background.avif);
+  padding: 80px 50px;
+}
+
+.work-container .work-img{
+  display: flex;
+  flex-direction: column-reverse;
+  
+
+}
+.work-container .work-img .work-desktop-img{
+  width: 55%;
+  height: 55%;
+  justify-self: center;
+  align-self: center;
+}
+.work-container .work-img .link{
+  font-family: "IBM Plex Mono", monospace;
+  color: #12f7d6;
+  font-size: 25px;
+  text-decoration: underline #fff 2px;
+  margin-bottom: -100px;
+  margin-left: 600px;
+}
+.work-container .work-img .fa-arrow-pointer{
+  /* font-size: 100px; */
+  color: #12f7d6;
+  margin-left: 790px;
+  margin-bottom: -30px;
+}
+
+
+
+
+/***************************** blog section **************************/
+.blog-container{
+  background-color: #292F36;
+  padding: 80px 50px;
+}
+.blog-container hr{
+  border: none;
+  height: 1px;
+  background-color: #fff;
+}
+.blog-box{
+  display: flex;
+  margin: 50px;
+  font-family: 'Ubuntu', sans-serif;
+  gap: 40px;
+}
+.blog-img{
+  /* margin-top: 40px; */
+  width: 250px;
+  height: 250px;
+  position: ;
+  /* border-radius: 20px; */
+  max-width: 100%;
+  transition: transform 0.4s linear, border 0.3s;
+  will-change: transform;
+}
+.blog-img:hover{
+  transform: scale(1);
+  border: 5px solid #12f7d6;
+}
+.blog-box h4{
+  color: #12f7d6;
+  font-size: 30px;
+}
+.blog-box a{
+  color: #12f7d6;
+}
+.blog-box .blog-description{
+  margin-top: 3%;
+}
+.blog-box .blog-description p{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.blog-box .blog-footer{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  /* margin-top: 20px; */
+}
+.blog-box .blog-footer p:first-of-type{
+  background-color: #43454D;
+  padding: 5px 8px;
+  border-radius: 20px;
+  /* margin-bottom: 0px; */
+  
+}
+.blog-box .blog-footer p span{
+  /* margin-bottom: -20px; */
+  font-weight: bold;
+}
+
+.button-box{
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  gap: 40px;
+  margin: 50px;
+  font-family: 'Ubuntu', sans-serif;
+}
+.button-box button{
+  /* border: none; */
+  font-size: 24px;
+  /* background-color: ; */
+  padding: 10px 15px;
+  border-radius: 30px;
+}
+.button-box button:first-of-type{
+  background-color: #12f7d6;
+  border: none;
+}
+
+.second-button{
+  color: #fff;
+  background-color: #292F36;
+  border: 2px solid #12f7d6;
+}
+.button-box button:hover{
+  /* opacity: 0.8; */
+}
+/***************************** work section **************************/
+.contact-container{
+  background-color: #1A1E23;
+  /* padding: 80px 50px; */
 }
