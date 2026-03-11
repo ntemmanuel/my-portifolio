@@ -14,6 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
@@ -39,8 +40,8 @@
 
       <!----------------------- Hero Section --------------------->
       <main id="hero-container">
-        <h1 class="title title-font">Developer</h1>
-        <div class="container">
+        <h1 class="title title-font" data-aos="fade-up">Developer</h1>
+        <div class="container" data-aos="fade-left" >
           <!-- developer2.avif -->
           <img
             src="passport profile.JPG"
@@ -50,22 +51,35 @@
           />
           <h4 class="center title-font">ntemmanuel</h4>
           <p class="center">Front-End Developer</p>
-          <p>
+          <div class="first-box">
             <i class="fa-regular fa-envelope icon"></i>
+            <p>
+            
             emmanuelntakirutimana250@gmail.com
           </p>
-          <p>
+          </div>
+          <div class="first-box">
             <i class="fa-solid fa-location-dot icon"></i>
+            <p>
+            
             Rwanda
           </p>
-          <p>
+          </div>
+          <div class="first-box">
             <i class="fa-solid fa-briefcase icon"></i>
+            <p>
+            
             Full-time / Freelancer
           </p>
-          <p>
+          </div>
+          <div class="first-box">
             <i class="fa-solid fa-link icon"></i>
+            <p>
+            
             www.ntemmanuel.com
           </p>
+          </div>
+
           <div class="skills-container">
             <p>HTML</p>
             <p>CSS</p>
@@ -93,7 +107,7 @@
 
             <p>Let's Talk <i class="fa-regular fa-envelope"></i></p>
           </div>
-          <div class="ability-description">
+          <div class="ability-description" data-aos="fade-right">
             <span>2</span>
             <p>Programming <br />Language</p>
             <span>6</span>
@@ -113,7 +127,7 @@
         <p>-------</p>
       </div>
       <div class="small-triangle-up"></div>
-      <div class="about-title title-font">
+      <div class="about-title title-font" data-aos="fade-up">
         <h3>About Me</h3>
       </div>
       <div class="about-description">
@@ -154,7 +168,7 @@
         <p>-------</p>
       </div>
       <div class="small-triangle-up"></div>
-      <div class="tech-header">
+      <div class="tech-header" data-aos="fade-up">
         <h3>Skills</h3>
         <div class="dotted-line">
           <div class="dotted-line-content"></div>
@@ -163,18 +177,18 @@
       </div>
 
       <div class="tech-stack-container">
-        <div class="tech-stack-container-1">
+        <div class="tech-stack-container-1" data-aos="fade-right">
           <i class="fa-solid fa-display"></i>
           <h5>web developement</h5>
           <p>HTML·CSS·JS·REACT</p>
         </div>
-        <div class="tech-stack-container-2">
+        <div class="tech-stack-container-2" data-aos="fade-left">
           <i class="fa-solid fa-mobile-screen-button"></i>
           <h5>App developement</h5>
           <p>iOS·Android</p>
         </div>
       </div>
-      <div class="language-container">
+      <div class="language-container" data-aos="fade-up">
         <div class="html-icon">
           <div class="icon-box">
             <i class="fa-brands fa-html5"></i>
@@ -205,7 +219,7 @@
         <p>-------</p>
       </div>
       <div class="small-triangle-up"></div>
-      <div class="tech-header">
+      <div class="tech-header" data-aos="fade-up">
         <h3>Works</h3>
         <div class="dotted-line">
           <div class="dotted-line-content"></div>
@@ -226,7 +240,7 @@
         <p>-------</p>
       </div>
       <div class="small-triangle-up"></div>
-      <div class="tech-header">
+      <div class="tech-header" data-aos="fade-up">
         <h3>Blogs</h3>
         <div class="dotted-line">
           <div class="dotted-line-content"></div>
@@ -266,23 +280,36 @@
         <p>-------</p>
       </div>
       <div class="small-triangle-up"></div>
-      <div class="tech-header">
+      <div class="tech-header" data-aos="fade-up">
         <h3>Contact</h3>
         <div class="dotted-line">
           <div class="dotted-line-content"></div>
         </div>
         <p>I’m currently available for freelance work</p>
         <div class="send-me-a-message">Send me a message</div>
-        <form action="">
-          <label for="name">Your name*</label>
-          <input id="name" name="name" type="text" placeholder="Enter your name" required>
-          <label for="email">Your email*</label>
-          <input id="email" name="email" type="email" placeholder="Enter your email" required>
-          <label for="message">Your message*</label>
-          <input id="message" name="message" type="text" placeholder="Enter your message" required>
-          <button type="submit">Send Message</button>
+        <form autocomplete="off" action="">
+          <div class="flexbox-holder">
+          <div class="above-input">
+            <label for="name">Your name*</label>   
+            <input id="name" name="name" type="text" placeholder="Enter your name" required autocomplete="off">
+          </div>
+          <div class="above-input">
+            <label for="email">Your email*</label>
+            <input id="email" name="email" type="email" placeholder="Enter your email" required autocomplete="off">
+          </div>
+          </div>
+          <div class="above-input">
+            <label for="message">Your message*</label>
+            <input id="message" name="message" type="text" placeholder="Enter your message" required autocomplete="off">
+          </div>
+          <div class="button-center">
+            <button type="submit">
+              Send Message 
+              <i class="fa-regular fa-paper-plane"></i>
+            </button>
+          </div>
         </form>
-      </section>
+    </section>
 
       <hr class="navbar-hr" />
       <footer>
@@ -299,5 +326,12 @@
         <p>Design By Nt Emmanuel</p>
       </footer>
     <script src="script.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 200,
+        duration: 1000,
+      });
+    </script>
   </body>
 </html>
